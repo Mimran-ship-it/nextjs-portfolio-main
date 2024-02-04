@@ -29,7 +29,7 @@ const projectsData = [
     description: "Created an animated landing page during my internship.",
     image: "/images/projects/4.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Mimran-ship-it/inceptai",
+    gitUrl: "https://github.com/Mimran-ship-it/nextjs-portfolio-main",
     previewUrl: "https://incept-ai-5.vercel.app/",
   },
 ];
