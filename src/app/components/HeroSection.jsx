@@ -17,7 +17,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-2xl sm:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
               Hello, I&apos;m{" "}
             </span>
@@ -66,7 +66,8 @@ const HeroSection = () => {
         >
           <div className="rounded-full lg:mr-20 bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src={`${process.env.NEXT_PUBLIC_URL}bajwa.png`}
+              src='/bajwa.png'
+              // src={`${process.env.NEXT_PUBLIC_URL}bajwa.png`}
               alt="hero image"
               className="absolute bg-black md:mt-0 my-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={400}
