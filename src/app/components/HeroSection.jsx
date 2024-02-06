@@ -7,10 +7,9 @@ import Link from "next/link";
 
 const HeroSection = () => {
 
-
-
   return (
     <section className="lg:py-20">
+      {console.log('sss',process.env.NEXT_PUBLIC_URL)}
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -25,7 +24,7 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "M.Imran",
+                "Ibrahim Bajwa",
                 1000,
                 "Web Developer",
                 1000,
@@ -67,7 +66,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full lg:mr-20 bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/Imran.png"
+              src={`${process.env.NEXT_PUBLIC_URL}bajwa.png`}
               alt="hero image"
               className="absolute bg-black md:mt-0 my-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={400}

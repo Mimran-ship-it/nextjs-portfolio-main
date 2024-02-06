@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         
         <Link href={"/"} className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600 lg:px-8  md:text-4xl font-semibold">
-                Muhammad Imran
+                IBRAHIM BAJWA
             </Link>
         
         <div className="mobile-menu block md:hidden  ">
