@@ -72,6 +72,7 @@ const EmailSection = () => {
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="jacob@google.com"
+
               />
             </div>
             <div className="mb-6">
@@ -105,7 +106,7 @@ const EmailSection = () => {
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
+                placeholder="Let&apos;s talk about..."
               />
             </div>
             <button
@@ -116,7 +117,7 @@ const EmailSection = () => {
               Send Message
             </button>
 
-      {check&&<motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.4}} className="text-white text-sm pt-1">Thank you for reaching out! I'll get back to you soon.</motion.p>}  
+      {check&&<motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.4}} className="text-white text-sm pt-1">Thank you for reaching out! I&apos;ll get back to you soon.</motion.p>}  
           </form>
       </div>
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const page =async ({params}) => {
   
-let data = await fetch(`${process.env.NEXT_PUBLIC_URL}api/getclientinfo`)
+let data = await fetch(`${process.env.NEXT_PUBLIC_URL}api/getclientinfo`,{ cache: "no-cache"})
 let res = await data.json()
 // console.log('res',res)
 console.log('params',params)
