@@ -66,7 +66,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full lg:mr-20 bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src='/bajwa.png'
+              src={`${process.env.NEXT_PUBLIC_URL}/bajwa.png`}
               // src={`${process.env.NEXT_PUBLIC_URL}bajwa.png`}
               alt="hero image"
               className="absolute bg-transparent md:mt-0 my-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
