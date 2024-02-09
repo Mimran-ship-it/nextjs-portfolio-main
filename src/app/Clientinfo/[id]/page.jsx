@@ -9,17 +9,20 @@ console.log('params',params)
   return (
    <>
    {params.id=='ibim889'&&<div>
-      {res.data.map((e,i)=>{
-        return(
-          <div key={i}>
-            <div className='border border-black my-4 ms-4'>
-            <div className='flex'><h1 className='font-bold mx-4'>Email</h1><p>{e.email}</p></div>
-            <div className='flex'><h1 className='font-bold mx-4'>Subject</h1><p>{e.subject}</p></div>
-            <div className='flex'><h1 className='font-bold mx-4'>Message</h1><p>{e.message}</p></div>
-            </div>
-          </div>
-        )
-      })}
+   {res.data.map((e, i) => {
+  const reverseIndex = res.data.length - i - 1;
+  const reversedElement = res.data[reverseIndex];
+  return (
+    <div key={reverseIndex}>
+      <div className='border border-black my-4 ms-4'>
+        <div className='flex'><h1 className='font-bold mx-4'>Email</h1><p>{reversedElement.email}</p></div>
+        <div className='flex'><h1 className='font-bold mx-4'>Subject</h1><p>{reversedElement.subject}</p></div>
+        <div className='flex'><h1 className='font-bold mx-4'>Message</h1><p>{reversedElement.message}</p></div>
+      </div>
+    </div>
+  );
+})}
+
     </div>}
     {
       params.id!='ibim889'&&<div>

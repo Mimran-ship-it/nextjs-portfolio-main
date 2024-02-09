@@ -30,7 +30,7 @@ const projectsData = [
     image: `${process.env.NEXT_PUBLIC_URL}/img3.png`,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Mimran-ship-it/nextjs-portfolio-main",
-    previewUrl: "https://incept-ai-5.vercel.app/",
+    previewUrl: "https://incept-ai-landing-page.vercel.app/",
   },
 ];
 

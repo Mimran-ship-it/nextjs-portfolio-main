@@ -117,7 +117,11 @@ const EmailSection = () => {
               Send Message
             </button>
 
-      {check&&<motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.4}} className="text-white text-sm pt-1">Thank you for reaching out! I&apos;ll get back to you soon.</motion.p>}  
+      {check&&<motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.4}} className="text-white text-sm pt-1">{`Thank you for reaching out! I will get back to you soon.`.split('').map((char,index)=>{
+        return(
+          <motion.span initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.02*index}} key={index} className="inline">{char}</motion.span>
+        )
+      })}</motion.p>}  
           </form>
       </div>
 

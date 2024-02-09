@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { motion } from "framer-motion";
 
 const navLinks = [
   {
@@ -24,11 +25,15 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed  mx-auto border border-[#33353F] top-0 left-0 right-0  bg-[#121212] z-50">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         
         <Link href={"/"} className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600 lg:px-8  md:text-4xl font-semibold">
-                IBRAHIM BAJWA
+                {'IBRAHIM BAJWA'.split('').map((char, index) => {
+                    return (
+                        <motion.span initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.07*index}} key={index}  className="inline">{char}</motion.span>
+                    )
+                })}
             </Link>
         
         <div className="mobile-menu block md:hidden  ">
